@@ -71,12 +71,12 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/etUsuario"
+                    android:id="@+id/etCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:ems="10"
-                    android:hint="Usuario"
+                    android:hint="Correo Electrónico"
                     android:inputType="text" />
 
                 <EditText

@@ -16,5 +16,5 @@ class MisTickets : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-}
+    }//on create
+}//class

@@ -22,8 +22,8 @@ import java.net.URL
 class MainActivity : AppCompatActivity() {
 
     //variables globales cawn
-    val ip = "http://100.123.9.5"
-    val proyecto = "/ExpertTechnicalSupport/backend_movil/login_movil.php?emailEmp="
+    val ip = "https://100.123.9.5"
+    val proyecto = "/ExpertTechnicalSupport-Web/backend_movil/login_movil.php?emailEmp="
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -62,23 +62,30 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-        NO MAMEN NO SIRVIO
-
-        PUTA MADRE ES LA TERCERA VEZ QUE INTENTO QUE ESA MIERDA SE ACOMODE
-
-
-        DASDASdsadjasljdhalhlaskhaf
-
         */
-
 
         //el listener del boton
         btnLogin.setOnClickListener {
+            val correo = etCorreo.text.toString().trim()
+            val password = etPassword.text.toString().trim()
+
             inicioSesion(ip + proyecto +
                     etCorreo.text.toString()
                 , etPassword.text.toString()
                 , queue)
+
+            if (correo.isEmpty() || password.isEmpty()) {
+                Toast.makeText(
+                    this,
+                    "Completa el correo y la contraseña",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+                return@setOnClickListener
+            }
+
+
+
         }
     } // cierre de oncreate
 
@@ -119,8 +126,4 @@ class MainActivity : AppCompatActivity() {
         queue.add(jsonArrayRequest)
 
     }//inicioSesion
-
-} // cierre de toodototote alv
-
-
-// viva el rockandroll
+} // cierre

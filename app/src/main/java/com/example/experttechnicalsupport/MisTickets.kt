@@ -19,5 +19,6 @@ class MisTickets : AppCompatActivity() {
     }//on create
 
     //aqui se acabo lo que se vendia cawn
+    //csm si
 
 }//class

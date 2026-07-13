@@ -17,4 +17,7 @@ class MisTickets : AppCompatActivity() {
             insets
         }
     }//on create
+
+    //aqui se acabo lo que se vendia cawn
+
 }//class

@@ -67,6 +67,9 @@ class MainActivity : AppCompatActivity() {
 
         PUTA MADRE ES LA TERCERA VEZ QUE INTENTO QUE ESA MIERDA SE ACOMODE
 
+
+        DASDASdsadjasljdhalhlaskhaf
+
         */
 
 
@@ -118,3 +121,6 @@ class MainActivity : AppCompatActivity() {
     }//inicioSesion
 
 } // cierre de toodototote alv
+
+
+// viva el rockandroll

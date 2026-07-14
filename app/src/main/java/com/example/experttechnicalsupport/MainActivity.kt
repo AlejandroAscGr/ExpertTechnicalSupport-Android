@@ -22,8 +22,9 @@ import java.net.URL
 class MainActivity : AppCompatActivity() {
 
     //variables globales cawn
-    val ip = "https://100.123.9.5"
+    val ip = "http://100.123.9.5"
     val proyecto = "/ExpertTechnicalSupport-Web/backend_movil/login_movil.php?emailEmp="
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -69,10 +70,7 @@ class MainActivity : AppCompatActivity() {
             val correo = etCorreo.text.toString().trim()
             val password = etPassword.text.toString().trim()
 
-            inicioSesion(ip + proyecto +
-                    etCorreo.text.toString()
-                , etPassword.text.toString()
-                , queue)
+            inicioSesion(ip + proyecto + etCorreo.text.toString(), etPassword.text.toString(),queue)
 
             if (correo.isEmpty() || password.isEmpty()) {
                 Toast.makeText(
@@ -102,7 +100,7 @@ class MainActivity : AppCompatActivity() {
                     for (i in 0 until response.length()) {
                         val jsonObject = response.getJSONObject(i)
 
-                        if(jsonObject.getString("password").equals(pass)){
+                        if(jsonObject.getString("pass").equals(pass)){
                             Toast.makeText(this,"Bienvenido al sistema", Toast.LENGTH_LONG).show();
                             val intent = Intent(this, MisTickets::class.java)
                             startActivity(intent)

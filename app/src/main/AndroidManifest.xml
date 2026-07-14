@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpertTechnicalSupport">
         <activity
+            android:name=".ticket"
+            android:exported="false" />
+        <activity
             android:name=".MisTickets"
             android:exported="false" />
         <activity

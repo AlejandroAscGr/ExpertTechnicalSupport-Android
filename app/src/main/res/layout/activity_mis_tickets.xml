@@ -207,15 +207,43 @@
                 android:padding="16dp">
 
                 <TextView
-                    android:id="@+id/tvFiltros2"
+                    android:id="@+id/tvTickets2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Filtros"
+                    android:text="Tickets"
                     android:textColor="#14ae5c"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnSeleccionar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#14ae5c"
+                    android:text="Seleccionar"
+                    app:icon="@drawable/siguiente"
+                    app:iconGravity="end" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="500dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#AFAEAE"
+            android:text="Regresar"
+            app:icon="@drawable/regresar" />
     </LinearLayout>
 </ScrollView>
